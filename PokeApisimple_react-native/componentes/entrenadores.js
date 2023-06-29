@@ -42,7 +42,7 @@ export default class Entrenadores extends React.Component {
             this.setState({pokemon:estado.datosunentrenador.rows});
             console.log(this.state.pokemon);
           } else if(estado.estado === 1){
-            ToastAndroid.show('no existe el pokemon', ToastAndroid.SHORT);
+            ToastAndroid.show('no existe el pokemon en la base de datos', ToastAndroid.SHORT);
            }
            else{
             this.setState({pokemon:estado.datostodosentrenador.rows});
